@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Nested If-Else</h1>
+        {% if a > b and a > c and a > d %}
+            <h1>First if-condition</h1>
+            {% if b > c and b > d %}
+                <h1>Second if-condition</h1>
+                <h1>{{b}}</h1>
+            {% else %}
+                <h1>Inside First-Else block</h1>
+                <h1>{{c}}</h1>
+            {% endif %}
+        {% else %}
+            <h1>Else-If condition</h1>
+            {% if c > d %}
+                <h1>Inside first Else-if condition</h1>
+                <h1>{{c}}</h1>
+            {% else %}
+                <h1>Inside second Else-if condition</h1>
+                <h1>{{d}}</h1>
+            {% endif %}
+        {% endif %}
+    </center>
+</body>
+</html>
